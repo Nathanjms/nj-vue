@@ -1,21 +1,16 @@
 <script setup>
 import './assets/css/index.css';
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div class="container mx-auto">
+    <div class="bg-slate-400 py-5 mx-auto w-5/6 text-center my-5 rounded-lg shadow-lg">
+      <h1 class="text-3xl font-medium hover:font-bold pb-4">
+        Nathan James
+      </h1>
+      <img alt="Photo of Nathan James"
+        class="mx-auto rounded-full  hover:scale-110 hover:shadow-lg transition duration-300 ease-in-out"
+        src="./assets/images/nathan_square.jpg" />
+    </div>
+  </div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
