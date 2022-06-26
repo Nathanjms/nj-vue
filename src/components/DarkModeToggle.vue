@@ -5,12 +5,12 @@ const theme = ref('light');
 
 const toggleDarkMode = () => {
     theme.value = theme.value === 'light' ? 'dark' : 'light';
-    localStorage.setItem('theme', theme.value);
+    window.localStorage.setItem('theme', theme.value);
     toggleDarkModeClass(theme);
 };
 
 onMounted(() => {
-    theme.value = localStorage.getItem('theme'); //gets stored theme value if any
+    theme.value = window.localStorage.getItem('theme'); //gets stored theme value if any
     toggleDarkModeClass(theme);
 });
 
