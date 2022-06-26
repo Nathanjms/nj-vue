@@ -10,7 +10,7 @@ const toggleDarkMode = () => {
 };
 
 onMounted(() => {
-    theme.value = window.localStorage.getItem('theme'); //gets stored theme value if any
+    theme.value = window.localStorage.getItem('theme') ?? theme.value; //gets stored theme value if any
     toggleDarkModeClass(theme);
 });
 
