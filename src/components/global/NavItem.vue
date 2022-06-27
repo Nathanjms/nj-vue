@@ -6,7 +6,7 @@ defineProps(['name', 'link', 'icon']);
         <router-link :to="link">
             <a :href="link" class="flex items-end justify-center text-center 
                 mx-auto px-2 pt-2 w-full 
-                text-gray-200 dark:text-gray-600
+                text-gray-100 dark:text-gray-600
                 group-hover:text-purple-400  dark:group-hover:text-purple-700
                 border-b-2 border-transparent
             ">
