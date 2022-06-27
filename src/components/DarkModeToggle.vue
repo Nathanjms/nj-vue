@@ -24,7 +24,7 @@ const toggleDarkModeClass = (theme) => {
 </script>
 
 <template>
-    <div class="py-2 text-right" :class="theme == 'dark' ? 'text-white' : 'text-black'">
+    <div class="p-5 text-right" :class="theme == 'dark' ? 'text-white' : 'text-black'">
         <button @click="toggleDarkMode" aria-label="Toggle themes">
             <span v-if="theme == 'dark'">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
