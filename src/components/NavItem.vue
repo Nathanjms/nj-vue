@@ -9,9 +9,9 @@ defineProps(['name', 'link', 'icon']);
                 group-hover:text-purple-400  dark:group-hover:text-purple-700
                 border-b-2 border-transparent
         ">
-            <span class="block px-1 pt-1 pb-2">
-                <i :class="icon" class="text-2xl pt-1 mb-1 block`"></i>
-                <span class="block text-xs pb-1">{{ name }}</span>
+            <span class="block px-1 py-1">
+                <i :class="icon" class="text-2xl mb-1 block`"></i>
+                <span class="block text-xs">{{ name }}</span>
                 <span class="block w-1 mx-auto h-1 group-hover:bg-purple-500 rounded-full"></span>
             </span>
         </a>
