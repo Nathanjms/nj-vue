@@ -5,12 +5,12 @@ import DarkModeToggle from './components/DarkModeToggle.vue';
 </script>
 
 <template>
-  <div class="h-screen dark:bg-slate-700 bg-slate-100">
+  <div class="h-screen dark:bg-slate-700 bg-slate-200">
 
     <Navbar />
     <div class="container mx-auto">
       <DarkModeToggle />
-      <div class="bg-slate-400 py-5 mx-auto w-4/6 text-center my-5 rounded-lg shadow-lg">
+      <div class="bg-slate-400 py-5 mx-auto w-11/12 sm:w-4/6 text-center my-5 rounded-lg shadow-lg">
         <h1 class="text-3xl font-medium pb-4">
           Nathan James
         </h1>
