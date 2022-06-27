@@ -6,7 +6,6 @@ import DarkModeToggle from './components/global/DarkModeToggle.vue';
 
 <template>
   <div class="h-screen dark:bg-slate-700 bg-slate-200">
-
     <Navbar />
     <div class="container mx-auto">
       <DarkModeToggle />
