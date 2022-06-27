@@ -4,7 +4,7 @@ defineProps(['name', 'link', 'icon']);
 <template>
     <div class="flex-1 group hover:scale-110">
         <router-link :to="link">
-            <a :href="link" class="flex items-end justify-center text-center 
+            <div class="flex items-end justify-center text-center 
                 mx-auto px-2 pt-2 w-full 
                 text-gray-100 dark:text-gray-600
                 group-hover:text-purple-400  dark:group-hover:text-purple-700
@@ -15,7 +15,7 @@ defineProps(['name', 'link', 'icon']);
                     <span class="block text-xs">{{ name }}</span>
                     <span class="block w-1 mx-auto h-1 group-hover:bg-purple-500 rounded-full"></span>
                 </span>
-            </a>
+            </div>
         </router-link>
     </div>
 </template>
