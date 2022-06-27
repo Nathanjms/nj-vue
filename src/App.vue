@@ -1,8 +1,7 @@
 <script setup>
 import './assets/css/index.css';
-import Navbar from './components/Navbar.vue';
-import DarkModeToggle from './components/DarkModeToggle.vue';
-import Home from './components/Home.vue';
+import Navbar from './components/global/Navbar.vue';
+import DarkModeToggle from './components/global/DarkModeToggle.vue';
 </script>
 
 <template>
@@ -10,7 +9,7 @@ import Home from './components/Home.vue';
     <Navbar />
     <div class="container mx-auto">
       <DarkModeToggle />
-      <Home />
+      <router-view />
     </div>
   </div>
 </template>

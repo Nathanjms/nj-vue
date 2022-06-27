@@ -5,29 +5,28 @@
 import NavItem from './NavItem.vue';
 const navItems = [
     {
-        link: '#',
+        link: '/',
         name: 'Home',
         icon: 'far fa-home'
     },
     {
-        link: '#',
+        link: '/about',
         name: 'About',
         icon: 'far fa-user'
     },
     {
-        link: '#',
+        link: '/coding',
         name: 'Coding',
         icon: 'far fa-desktop'
     },
     {
-        link: '#',
+        link: '/music',
         name: 'Music',
         icon: 'far fa-guitar'
     },
 ];
 </script>
 <template>
-
     <div class="mx-auto fixed z-50 bottom-0 sm:top-0 sm:ml-2 w-full sm:w-auto sm:flex sm:items-center">
         <div class="px-1 dark:bg-slate-200 shadow-lg sm:rounded-2xl bg-slate-500">
             <div class="flex sm:flex-col sm:py-1">
