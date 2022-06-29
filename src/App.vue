@@ -17,7 +17,10 @@ import OtherLinks from './components/global/OtherLinks.vue';
           <DarkModeToggle />
         </div>
       </div>
-      <router-view />
+      <div
+        class="bg-slate-400 py-5 mx-auto w-11/12 sm:w-5/6 min-h-[60vh] sm:min-h-[75vh] text-center my-5 rounded-lg shadow-lg">
+        <router-view />
+      </div>
     </div>
     <Footer />
   </div>
