@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 #app {
-    min-height: 100vh;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Trispace", sans-serif;
 }
