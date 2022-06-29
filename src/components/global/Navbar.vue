@@ -1,6 +1,3 @@
-    <style>
-    @import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
-    </style>
 <script setup>
 import NavItem from './NavItem.vue';
 const navItems = [
