@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'sm': { 'raw': '(min-height: 425px) and (min-width: 640px)' },
+      }
+    },
   },
   plugins: [],
   darkMode: 'class' 
