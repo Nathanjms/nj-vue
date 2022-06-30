@@ -24,7 +24,7 @@ const navItems = [
 ];
 </script>
 <template>
-    <div class="mx-auto fixed z-50 bottom-0 sm:top-0 h-fit my-auto sm:ml-2 w-full sm:w-auto sm:flex sm:items-center">
+    <div class="mx-auto fixed z-50 bottom-0 h-16 sm:top-0 sm:h-fit my-auto sm:ml-2 w-full sm:w-auto sm:flex sm:items-center">
         <div class="px-1 dark:bg-slate-200 shadow-lg sm:rounded-2xl bg-slate-700 transition ease-in-out">
             <div class="flex sm:flex-col sm:py-1">
                 <NavItem v-for="navItem in navItems" :link="navItem.link" :name="navItem.name" :icon="navItem.icon" />
