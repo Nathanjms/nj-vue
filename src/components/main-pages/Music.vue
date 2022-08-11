@@ -1,10 +1,10 @@
 <template>
-    <h1 class="text-3xl font-medium pb-4">
+    <h1 class="pb-4 text-3xl font-medium">
         Music
     </h1>
-    <h2 class="text-2xl font-medium py-4 hover:rotate-12 transition-all">
+    <h2 class="py-4 text-2xl font-medium transition-all hover:rotate-12">
         Website coming soon...
     </h2>
-    <a href="https://old.nathanjms.co.uk" class="text-sm text-blue-600 hover:text-blue-800 underline">Go to Old
+    <a href="https://old.nathanjms.co.uk" class="text-sm text-blue-600 underline hover:text-blue-800">Go to Old
         Website?</a>
 </template>
