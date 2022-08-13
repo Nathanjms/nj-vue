@@ -4,7 +4,7 @@
     </h1>
     <router-link to="/">
         <h2
-            class="py-4 text-2xl font-medium text-blue-600 underline transition-all hover:rotate-12 hover:text-blue-800">
+            class="py-4 text-2xl font-medium text-blue-600 underline transition-all hover:rotate-3 hover:text-blue-800">
             Return to homepage?
         </h2>
     </router-link>
