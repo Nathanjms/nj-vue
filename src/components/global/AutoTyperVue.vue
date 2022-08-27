@@ -68,6 +68,10 @@ export default {
       type: Boolean,
       default: true,
     },
+    repeat: {
+      type: Boolean,
+      default: true,
+    },
   },
   data() {
     return {
@@ -100,7 +104,9 @@ export default {
         await this.delay(this.waitBeforeDeleteDelay);
         await this.removeWord(currentWord);
         await this.delay(this.betweenWordDelay);
-        console.log(currentWord);
+      }
+      if (this.repeat) {
+        this.autoType();
       }
     },
     async writeWord(currentWord) {
@@ -110,10 +116,8 @@ export default {
       }
     },
     async removeWord(currentWord) {
-      console.log(currentWord, currentWord.length);
       for (let i = 0; i < currentWord.length; i++) {
         this.currentText = this.currentText.slice(0, -1);
-        console.log(this.currentText, i);
         await this.delay(this.deletingDelay);
       }
     },
