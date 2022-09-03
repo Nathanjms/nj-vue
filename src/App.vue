@@ -22,6 +22,5 @@ import OtherLinks from './components/global/OtherLinks.vue';
         <router-view />
       </div>
     </div>
-    <Footer />
   </div>
 </template>
