@@ -18,3 +18,7 @@ import { AutoTyperVue } from "auto-typer-vue3";
     text="Website coming soon..."
   />
 </template>
+
+<style scoped>
+@import "auto-typer-vue3/dist/style.css";
+</style>
