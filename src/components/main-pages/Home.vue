@@ -21,4 +21,7 @@ import { AutoTyperVue } from "auto-typer-vue3";
 
 <style scoped>
 @import "auto-typer-vue3/dist/style.css";
+.auto-typer-vue::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
 </style>
