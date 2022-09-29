@@ -1,5 +1,12 @@
 <script setup>
 import { AutoTyperVue } from "auto-typer-vue3";
+let textArray = [
+  "Software Developer...",
+  "Musician...",
+  "Mathematician...",
+  "Web Developer...",
+];
+let randomTextOrder = textArray.sort(() => Math.random() - 0.5);
 </script>
 
 <template>
@@ -10,12 +17,15 @@ import { AutoTyperVue } from "auto-typer-vue3";
     class="text-sm text-blue-600 underline hover:text-blue-800"
     >Go to Old Website?</a
   >
+  <h3 class="py-4 text-2xl font-medium transition-all hover:rotate-3">
+    Website Coming soon...
+  </h3>
 
   <AutoTyperVue
-    beginningWord="&nbsp;"
-    componentTag="h2"
-    class="py-4 text-2xl font-medium transition-all hover:rotate-3"
-    text="Website coming soon..."
+    componentTag="h3"
+    class="py-4 text-xl font-medium"
+    writtenBeginningWord="I'm a "
+    :text="randomTextOrder"
   />
 </template>
 
