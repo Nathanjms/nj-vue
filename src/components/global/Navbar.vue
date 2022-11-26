@@ -37,7 +37,7 @@ const navItems = [
           :link="navItem.link"
           :name="navItem.name"
           :icon="navItem.icon"
-          :active="route.fullPath === navItem.path"
+          :active="route.fullPath === navItem.link"
         />
       </div>
     </div>

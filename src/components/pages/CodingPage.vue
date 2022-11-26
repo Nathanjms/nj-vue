@@ -1,10 +1,10 @@
 <template>
-    <h1 class="pb-4 text-3xl font-medium">
-        Coding
-    </h1>
-    <h2 class="py-4 text-2xl font-medium transition-all hover:rotate-3">
-        Website coming soon...
-    </h2>
-    <a href="https://old.nathanjms.co.uk" class="text-sm text-blue-600 underline hover:text-blue-800">Go to Old
-        Website?</a>
+  <div class="grid grid-rows-3">
+    <div class="mb-4">
+      <h1 class="text-3xl font-medium">Coding</h1>
+    </div>
+    <div>
+      <p class="mb-4">Coming Soon...</p>
+    </div>
+  </div>
 </template>
