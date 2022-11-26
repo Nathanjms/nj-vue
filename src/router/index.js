@@ -1,34 +1,34 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../components/main-pages/Home.vue";
-import About from "../components/main-pages/About.vue";
-import Coding from "../components/main-pages/Coding.vue";
-import Music from "../components/main-pages/Music.vue";
+import HomePage from "../components/pages/HomePage.vue";
+import AboutPage from "../components/pages/AboutPage.vue";
+import CodingPage from "../components/pages/CodingPage.vue";
+import MusicPage from "../components/pages/MusicPage.vue";
 import NotFound from "../components/global/NotFound.vue";
 const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home,
+    component: HomePage,
   },
   {
     path: "/about",
     name: "About",
-    component: About,
+    component: AboutPage,
   },
   {
     path: "/coding",
     name: "Coding",
-    component: Coding,
+    component: CodingPage,
   },
   {
     path: "/music",
     name: "Music",
-    component: Music,
+    component: MusicPage,
   },
   {
     path: "/about",
     name: "About",
-    component: About,
+    component: AboutPage,
   },
   {
     path: "/:pathMatch(.*)*",
