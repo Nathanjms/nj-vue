@@ -16,7 +16,7 @@ let randomTextOrder = textArray.sort(() => Math.random() - 0.5);
         :text="randomTextOrder"
       />
     </div>
-    <div>
+    <div class="self-center">
       <p class="mb-2">
         Welcome to my website, written in
         <a
@@ -27,6 +27,8 @@ let randomTextOrder = textArray.sort(() => Math.random() - 0.5);
           >Vue.js</a
         >.
       </p>
+    </div>
+    <div class="self-center">
       <p class="mb-2">
         To get in touch, drop me an email at
         <a class="font-medium text-blue-700 underline hover:text-blue-900" href="mailto:nathan@nathanjms.co.uk"
