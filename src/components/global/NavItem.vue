@@ -1,6 +1,5 @@
 <script setup>
 const props = defineProps(["name", "link", "icon", "active"]);
-console.log(props.active);
 </script>
 <template>
   <div class="group flex-1 hover:scale-110">

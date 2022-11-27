@@ -165,10 +165,10 @@ arg@^5.0.2:
   resolved "https://registry.yarnpkg.com/arg/-/arg-5.0.2.tgz#c81433cc427c92c4dcf4865142dbca6f15acd59c"
   integrity sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg==
 
-auto-typer-vue3@^1.1.1:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/auto-typer-vue3/-/auto-typer-vue3-1.1.2.tgz#89603e7be8a9316f902240757efe3f292125e952"
-  integrity sha512-70GzraG91ka1NBjQbVCxt/WsVOOJfKOoLLJ1heVjwgLK/XXgvvXqbbX1sjGxf4N+k1uovYWjYiOVwg5xROujuA==
+auto-typer-vue3@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/auto-typer-vue3/-/auto-typer-vue3-1.1.3.tgz#47ce29af1d09e6097705d27e3f5fc5778b607fb0"
+  integrity sha512-p28eE8dpJf+ry9ac+l4YF7UOlJ4FeKPUWy8556hmlUqxvQjNI4pE3Fs5eLDMIAaEQB0PelC5gOhlDLFRR+LOOQ==
 
 autoprefixer@^10.4.7:
   version "10.4.13"
