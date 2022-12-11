@@ -18,8 +18,8 @@ import LinkPartial from "../global/LinkPartial.vue";
       </p>
       <p>
         You'll find another one of my songs as the backing to one of my
-        <LinkPartial href="https://youtube.com/nathanjms"> YouTube Videos</LinkPartial>, but these are the only ones in
-        the wild, for now...
+        <LinkPartial newTab href="https://youtu.be/hqVuyWsSPSs"> YouTube Videos</LinkPartial>, but these are the only
+        ones in the wild, for now...
       </p>
       <iframe
         class="w-full mx-auto rounded mt-8"
