@@ -1,10 +1,136 @@
+<script setup>
+import LinkPartial from "../global/LinkPartial.vue";
+import { AutoTyperVue } from "auto-typer-vue3";
+</script>
+
 <template>
-  <div class="grid grid-rows-3">
-    <div class="mb-4">
+  <div>
+    <div class="mb-8">
       <h1 class="text-3xl font-medium">Coding</h1>
     </div>
-    <div>
-      <p class="mb-4">Coming Soon...</p>
+    <div class="mb-8">
+      Below are some of my personal projects I have (or am currently) working on! If you would like to see more, take a
+      look on <LinkPartial href="https://github.com/nathanjms" newTab>GitHub</LinkPartial>.
+    </div>
+    <div class="text-left">
+      <div class="mb-7">
+        <div class="flex justify-between mb-1">
+          <h2 class="text-xl">GymNotes</h2>
+          <a href="https://gymnotes.uk" target="_blank" rel="noopener noreferrer">
+            <button
+              class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
+            >
+              Website
+            </button>
+          </a>
+        </div>
+        <p>
+          Spending my spare time making GymNotes; an offline-first, web app to track your workouts. This is written in
+          Vue.js, with an offline Database (IndexedDB) via
+          <LinkPartial href="https://dexie.org/" newTab>Dexie.js</LinkPartial>.
+        </p>
+      </div>
+      <div class="mb-7">
+        <div class="flex justify-between mb-1">
+          <AutoTyperVue componentTag="h2" class="text-xl" text="Auto Typer Vue3" />
+          <div class="flex gap-1">
+            <a href="https://www.npmjs.com/package/auto-typer-vue3" target="_blank" rel="noopener noreferrer">
+              <button
+                class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
+              >
+                npm
+              </button>
+            </a>
+            <a href="https://github.com/Nathanjms/auto-typer-vue3" target="_blank" rel="noopener noreferrer">
+              <button
+                class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
+              >
+                GitHub
+              </button>
+            </a>
+          </div>
+        </div>
+        <p>
+          My first attempt at an npm package, Auto Typer Vue3 provides an easy to use, but highly customisable,
+          autotyper for websites written in Vue3.
+        </p>
+      </div>
+      <div class="mb-7">
+        <div class="flex justify-between mb-1">
+          <h2 class="text-xl">NJ Script - Oh My Zsh</h2>
+          <div class="flex gap-1">
+            <a href="https://github.com/Nathanjms/ohmyzsh-nj-script" target="_blank" rel="noopener noreferrer">
+              <button
+                class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
+              >
+                GitHub
+              </button>
+            </a>
+          </div>
+        </div>
+        <p>
+          A script to install Oh My Zsh with powerlevel10k, zsh-autosuggestions, and zsh-syntax-highlighting
+          automatically - for both Linux and Mac.
+        </p>
+      </div>
+      <div class="mb-7">
+        <div class="flex justify-between mb-1">
+          <h2 class="text-xl">JamesFest 2022</h2>
+          <div class="flex gap-1">
+            <a href="https://jamesfest2022.co.uk" target="_blank" rel="noopener noreferrer">
+              <button
+                class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
+              >
+                Website
+              </button>
+            </a>
+            <a href="https://github.com/Nathanjms/jamesfest2022" target="_blank" rel="noopener noreferrer">
+              <button
+                class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
+              >
+                GitHub
+              </button>
+            </a>
+          </div>
+        </div>
+        <p>
+          Written in React with <LinkPartial href="https://nextjs.org/" newTab>Next.js</LinkPartial>, this website was
+          made to provide information about a wedding. Before the wedding, there was a (basic) login system, which still
+          exists on the 'Photos' page.
+        </p>
+      </div>
+      <div class="mb-7">
+        <div class="flex justify-between mb-1">
+          <h2 class="text-xl">Nathanjms Tools</h2>
+          <div class="flex gap-1">
+            <a href="https://tools.nathanjms.co.uk" target="_blank" rel="noopener noreferrer">
+              <button
+                class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
+              >
+                Website
+              </button>
+            </a>
+            <a href="https://github.com/Nathanjms/nathanjms-tools" target="_blank" rel="noopener noreferrer">
+              <button
+                class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
+              >
+                GitHub
+              </button>
+            </a>
+          </div>
+        </div>
+        <p>
+          Used as a learning experience to try TypeScript with React, this website contains a few tools to assist in my
+          day-to-day development work.
+        </p>
+      </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+@import "auto-typer-vue3/dist/style.css";
+.auto-typer-vue::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+</style>
