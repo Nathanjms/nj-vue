@@ -1,3 +1,7 @@
+<script setup>
+import LinkPartial from "../global/LinkPartial.vue";
+</script>
+
 <template>
   <div>
     <div class="mb-8">
@@ -8,22 +12,10 @@
       <p class="mb-4">🖥️ Web Developer for just over 2 years</p>
       <p class="mb-4">
         ⌨️ Main languages include
-        <a
-          class="font-medium text-blue-700 underline hover:text-blue-900"
-          href="https://laravel.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Laravel</a
-        >
-        and
-        <a
-          class="font-medium text-blue-700 underline hover:text-blue-900"
-          href="https://vuejs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Vue.js</a
-        >
+        <LinkPartial href="https://laravel.com" newTab>Laravel</LinkPartial> (PHP) and
+        <LinkPartial href="https://vuejs.org" newTab>Vue.js</LinkPartial> (JavaScript/TypeScript)
       </p>
+      <p class="mb-4">🧠 Also use MySql, React, Shell Scripts and learning new things all the time!</p>
       <p class="mb-4">🎸 Love going to gigs and playing the guitar</p>
     </div>
   </div>
