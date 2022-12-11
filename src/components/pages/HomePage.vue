@@ -1,5 +1,6 @@
 <script setup>
 import { AutoTyperVue } from "auto-typer-vue3";
+import LinkPartial from "../global/LinkPartial.vue";
 let textArray = ["Software Developer...", "Musician...", "Mathematician...", "Web Developer..."];
 let randomTextOrder = textArray.sort(() => Math.random() - 0.5);
 </script>
@@ -19,19 +20,11 @@ let randomTextOrder = textArray.sort(() => Math.random() - 0.5);
     <div class="self-center">
       <p class="mb-4">
         Welcome to my website, written in
-        <a
-          class="font-medium text-blue-700 underline hover:text-blue-900"
-          href="https://vuejs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Vue.js</a
-        >.
+        <LinkPartial href="https://vuejs.org/" newTab>Vue.js</LinkPartial>.
       </p>
       <p class="mb-2">
         To get in touch, drop me an email at
-        <a class="font-medium text-blue-700 underline hover:text-blue-900" href="mailto:nathan@nathanjms.co.uk"
-          >nathan@nathanjms.co.uk</a
-        >.
+        <LinkPartial href="mailto:nathan@nathanjms.co.uk">nathan@nathanjms.co.uk</LinkPartial>
       </p>
     </div>
   </div>

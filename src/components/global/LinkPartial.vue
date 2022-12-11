@@ -3,9 +3,11 @@ import { computed } from "vue";
 
 interface Props {
   href: string;
-  newTab: boolean;
+  newTab?: boolean;
 }
-const props = defineProps<Props>();
+const props = withDefaults(defineProps<Props>(), {
+  newTab: false,
+});
 
 const newTabAttrs = computed(() => {
   return props.newTab
