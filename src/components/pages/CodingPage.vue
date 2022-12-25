@@ -1,6 +1,7 @@
 <script setup>
 import LinkPartial from "../global/LinkPartial.vue";
 import { AutoTyperVue } from "auto-typer-vue3";
+import LinkAndBtn from "../global/LinkAndBtn.vue";
 </script>
 
 <template>
@@ -16,13 +17,7 @@ import { AutoTyperVue } from "auto-typer-vue3";
       <div class="mb-7">
         <div class="flex justify-between mb-1">
           <h2 class="text-xl">GymNotes</h2>
-          <a href="https://gymnotes.uk" target="_blank" rel="noopener noreferrer">
-            <button
-              class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
-            >
-              Website
-            </button>
-          </a>
+          <LinkAndBtn :items="[{ href: 'https://gymnotes.uk', name: 'Website' }]" />
         </div>
         <p>
           Spending my spare time making GymNotes; an offline-first, web app to track your workouts. This is written in
@@ -33,22 +28,12 @@ import { AutoTyperVue } from "auto-typer-vue3";
       <div class="mb-7">
         <div class="flex justify-between mb-1">
           <AutoTyperVue componentTag="h2" class="text-xl" text="Auto Typer Vue3" />
-          <div class="flex gap-1">
-            <a href="https://www.npmjs.com/package/auto-typer-vue3" target="_blank" rel="noopener noreferrer">
-              <button
-                class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
-              >
-                npm
-              </button>
-            </a>
-            <a href="https://github.com/Nathanjms/auto-typer-vue3" target="_blank" rel="noopener noreferrer">
-              <button
-                class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
-              >
-                GitHub
-              </button>
-            </a>
-          </div>
+          <LinkAndBtn
+            :items="[
+              { href: 'https://github.com/Nathanjms/auto-typer-vue3', name: 'GitHub' },
+              { href: 'https://www.npmjs.com/package/auto-typer-vue3', name: 'npm' },
+            ]"
+          />
         </div>
         <p>
           My first attempt at an npm package, Auto Typer Vue3 provides an easy to use, but highly customisable,
@@ -58,15 +43,7 @@ import { AutoTyperVue } from "auto-typer-vue3";
       <div class="mb-7">
         <div class="flex justify-between mb-1">
           <h2 class="text-xl">NJ Script - Oh My Zsh</h2>
-          <div class="flex gap-1">
-            <a href="https://github.com/Nathanjms/ohmyzsh-nj-script" target="_blank" rel="noopener noreferrer">
-              <button
-                class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
-              >
-                GitHub
-              </button>
-            </a>
-          </div>
+          <LinkAndBtn :items="[{ href: 'https://github.com/Nathanjms/ohmyzsh-nj-script', name: 'GitHub' }]" />
         </div>
         <p>
           A script to install Oh My Zsh with powerlevel10k, zsh-autosuggestions, and zsh-syntax-highlighting
@@ -76,22 +53,12 @@ import { AutoTyperVue } from "auto-typer-vue3";
       <div class="mb-7">
         <div class="flex justify-between mb-1">
           <h2 class="text-xl">JamesFest 2022</h2>
-          <div class="flex gap-1">
-            <a href="https://jamesfest2022.co.uk" target="_blank" rel="noopener noreferrer">
-              <button
-                class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
-              >
-                Website
-              </button>
-            </a>
-            <a href="https://github.com/Nathanjms/jamesfest2022" target="_blank" rel="noopener noreferrer">
-              <button
-                class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
-              >
-                GitHub
-              </button>
-            </a>
-          </div>
+          <LinkAndBtn
+            :items="[
+              { href: 'https://jamesfest2022.co.uk', name: 'Website' },
+              { href: 'https://github.com/Nathanjms/jamesfest2022', name: 'GitHub' },
+            ]"
+          />
         </div>
         <p>
           Written in React with <LinkPartial href="https://nextjs.org/" newTab>Next.js</LinkPartial>, this website was
@@ -102,22 +69,12 @@ import { AutoTyperVue } from "auto-typer-vue3";
       <div class="mb-7">
         <div class="flex justify-between mb-1">
           <h2 class="text-xl">Nathanjms Tools</h2>
-          <div class="flex gap-1">
-            <a href="https://tools.nathanjms.co.uk" target="_blank" rel="noopener noreferrer">
-              <button
-                class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
-              >
-                Website
-              </button>
-            </a>
-            <a href="https://github.com/Nathanjms/nathanjms-tools" target="_blank" rel="noopener noreferrer">
-              <button
-                class="rounded-xl bg-slate-700 px-2 text-white hover:text-purple-400 dark:bg-slate-200 dark:text-gray-700 dark:hover:text-purple-700"
-              >
-                GitHub
-              </button>
-            </a>
-          </div>
+          <LinkAndBtn
+            :items="[
+              { href: 'https://tools.nathanjms.co.uk', name: 'Website' },
+              { href: 'https://github.com/Nathanjms/nathanjms-tools', name: 'GitHub' },
+            ]"
+          />
         </div>
         <p>
           Used as a learning experience to try TypeScript with React, this website contains a few tools to assist in my
