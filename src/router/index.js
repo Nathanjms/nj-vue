@@ -1,39 +1,34 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomePage from "../components/pages/HomePage.vue";
-import AboutPage from "../components/pages/AboutPage.vue";
-import CodingPage from "../components/pages/CodingPage.vue";
-import MusicPage from "../components/pages/MusicPage.vue";
-import NotFound from "../components/global/NotFound.vue";
 const routes = [
   {
     path: "/",
     name: "Home",
-    component: HomePage,
+    component: () => import("../components/pages/HomePage.vue"),
   },
   {
     path: "/about",
     name: "About",
-    component: AboutPage,
+    component: () => import("../components/pages/AboutPage.vue"),
   },
   {
     path: "/coding",
     name: "Coding",
-    component: CodingPage,
+    component: () => import("../components/pages/CodingPage.vue"),
   },
   {
     path: "/music",
     name: "Music",
-    component: MusicPage,
+    component: () => import("../components/pages/MusicPage.vue"),
   },
   {
     path: "/about",
     name: "About",
-    component: AboutPage,
+    component: () => import("../components/pages/AboutPage.vue"),
   },
   {
     path: "/:pathMatch(.*)*",
     name: "404",
-    component: NotFound,
+    component: () => import("../components/global/NotFound.vue"),
   },
 ];
 const router = createRouter({
