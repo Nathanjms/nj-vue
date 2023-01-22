@@ -6,7 +6,7 @@ import OtherLinks from "./components/global/OtherLinks.vue";
 </script>
 
 <template>
-  <div class="min-h-screen bg-slate-200 transition ease-in-out dark:bg-slate-700 sm:min-h-screen">
+  <div class="min-h-screen w-screen bg-slate-200 transition ease-in-out dark:bg-slate-700 sm:min-h-screen">
     <Navbar />
     <div class="container mx-auto pb-16">
       <div class="flex justify-between p-5 text-gray-700 dark:text-white">

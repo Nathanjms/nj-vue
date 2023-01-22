@@ -2,6 +2,7 @@
 import LinkPartial from "../global/LinkPartial.vue";
 import { AutoTyperVue } from "auto-typer-vue3";
 import LinkAndBtn from "../global/LinkAndBtn.vue";
+import VueModalExample from "../VueModalExample.vue";
 </script>
 
 <template>
@@ -20,8 +21,8 @@ import LinkAndBtn from "../global/LinkAndBtn.vue";
           <LinkAndBtn :items="[{ href: 'https://gymnotes.uk', name: 'Website' }]" />
         </div>
         <p>
-          Spending my spare time making GymNotes; an offline-first, web app to track your workouts. This is written in
-          Vue.js, with an offline Database (IndexedDB) via
+          GymNotes is an offline-first web app to track your workouts. This is written in Vue.js, with an offline
+          Database (IndexedDB) via
           <LinkPartial href="https://dexie.org/" newTab>Dexie.js</LinkPartial>.
         </p>
       </div>
@@ -38,6 +39,22 @@ import LinkAndBtn from "../global/LinkAndBtn.vue";
         <p>
           My first attempt at an npm package, Auto Typer Vue3 provides an easy to use, but highly customisable,
           autotyper for websites written in Vue3.
+        </p>
+      </div>
+      <div class="mb-7">
+        <div class="flex justify-between mb-1">
+          <h2 class="text-xl">Vue3 Tailwind Modal</h2>
+          <LinkAndBtn
+            :items="[
+              { href: 'https://github.com/Nathanjms/vue3-tailwind-modal', name: 'GitHub' },
+              { href: 'https://www.npmjs.com/package/vue3-tailwind-modal', name: 'npm' },
+            ]"
+          />
+        </div>
+        <p>
+          Vue3 Tailwind Modal was created initially for GymNotes, before being expanded into its own package. Styled
+          with Tailwind CSS and with support for both dark/light mode, this package is in its early stages.
+          <VueModalExample />
         </p>
       </div>
       <div class="mb-7">

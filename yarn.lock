@@ -770,6 +770,11 @@ vue-router@4:
   dependencies:
     "@vue/devtools-api" "^6.4.5"
 
+vue3-tailwind-modal@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/vue3-tailwind-modal/-/vue3-tailwind-modal-0.0.4.tgz#fc7a3e8cad51b4d3fea166708243a473d3cca4bf"
+  integrity sha512-i9KKbDnObjrQuQXMoibFGNIKaLxVB7yiDkzwR94VHJMZ2xdxpO2oMmqjn3tb7LtBiuO3Lmh4jmfuec9089owNA==
+
 vue@^3.2.25:
   version "3.2.45"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.45.tgz#94a116784447eb7dbd892167784619fef379b3c8"
