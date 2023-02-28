@@ -18,7 +18,7 @@ import OtherLinks from "./components/global/OtherLinks.vue";
         </div>
       </div>
       <div
-        class="mx-auto my-5 min-h-[50vh] w-11/12 max-w-4xl rounded-lg bg-slate-400 py-5 px-5 sm:px-8 text-center shadow-lg sm:min-h-[70vh] sm:w-5/6"
+        class="mx-auto my-5 min-h-[50vh] w-10/12 max-w-4xl rounded-lg bg-slate-400 py-5 px-5 sm:px-8 text-center shadow-lg sm:min-h-[70vh] sm:w-5/6"
       >
         <RouterView />
       </div>
