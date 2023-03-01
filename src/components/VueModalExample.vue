@@ -17,7 +17,7 @@ const showModal = ref(false);
   <Vue3TailwindModal
     :showModal="showModal"
     @close="() => (showModal = false)"
-    colors="bg-slate-400 dark:bg-slate-600 dark:text-gray-200"
+    colors="bg-slate-400 dark:bg-slate-700 dark:text-gray-200"
   >
     <template #header><h2 class="text-lg">Vue3 Tailwind Modal</h2></template>
     The header, body and footer can be customised, and change based on whether this site is in dark mode - try toggling
