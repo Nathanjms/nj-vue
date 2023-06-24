@@ -28,7 +28,7 @@ import VueModalExample from "../VueModalExample.vue";
       </div>
       <div class="mb-7">
         <div class="flex justify-between mb-1">
-          <AutoTyperVue componentTag="h2" class="text-xl" text="Auto Typer Vue3" />
+          <AutoTyperVue componentTag="h2" class="text-xl" text="Auto Typer Vue3" :typingDelay="200" :repeat="false" />
           <LinkAndBtn
             :items="[
               { href: 'https://github.com/Nathanjms/auto-typer-vue3', name: 'GitHub' },
