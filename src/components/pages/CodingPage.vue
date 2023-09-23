@@ -18,7 +18,7 @@ import VueModalExample from "../VueModalExample.vue";
       <div class="mb-7">
         <div class="flex justify-between mb-1">
           <h2 class="text-xl">GymNotes</h2>
-          <LinkAndBtn :items="[{ href: 'https://gymnotes.uk', name: 'Website' }]" />
+          <LinkAndBtn :items="[{ href: 'https://gymnotes.co.uk', name: 'Website' }]" />
         </div>
         <p>
           GymNotes is an offline-first web app to track your workouts. This is written in Vue.js, with an offline
