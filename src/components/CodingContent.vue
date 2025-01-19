@@ -1,17 +1,15 @@
 <script setup>
-import LinkPartial from "../global/LinkPartial.vue";
+import LinkPartial from "./global/LinkPartial.vue";
 import { AutoTyperVue } from "auto-typer-vue3";
-import LinkAndBtn from "../global/LinkAndBtn.vue";
-import VueModalExample from "../VueModalExample.vue";
+import LinkAndBtn from "./global/LinkAndBtn.vue";
+import VueModalExample from "./VueModalExample.vue";
 </script>
 
 <template>
   <div>
-    <div class="mb-8">
-      <h1 class="text-3xl font-medium">Coding</h1>
-    </div>
-    <div class="mb-8">
-      Below are some of my personal projects I have (or am currently) working on! If you would like to see more, take a
+    <h1 class="text-3xl font-medium mb-4">Projects</h1>
+    <div class="mb-1">
+      Below are a handful of personal projects I have/am currently working on. If you would like to see more, take a
       look on <LinkPartial href="https://github.com/nathanjms" newTab>GitHub</LinkPartial>.
     </div>
     <div class="text-left">
@@ -23,12 +21,13 @@ import VueModalExample from "../VueModalExample.vue";
         <p>
           GymNotes is an offline-first web app to track your workouts. This is written in Vue.js, with an offline
           Database (IndexedDB) via
-          <LinkPartial href="https://dexie.org/" newTab>Dexie.js</LinkPartial>.
+          <LinkPartial href="https://dexie.org/" newTab>Dexie.js</LinkPartial>. Cloud backup is powered by a backend
+          written in Go.
         </p>
       </div>
       <div class="mb-7">
         <div class="flex justify-between mb-1">
-          <AutoTyperVue componentTag="h2" class="text-xl" text="Auto Typer Vue3" :typingDelay="200" :repeat="false" />
+          <AutoTyperVue componentTag="h2" class="text-xl" text="Auto Typer Vue3" :typingDelay="300" />
           <LinkAndBtn
             :items="[
               { href: 'https://github.com/Nathanjms/auto-typer-vue3', name: 'GitHub' },
@@ -81,21 +80,6 @@ import VueModalExample from "../VueModalExample.vue";
           Written in React with <LinkPartial href="https://nextjs.org/" newTab>Next.js</LinkPartial>, this website was
           made to provide information about a wedding. Before the wedding, there was a (basic) login system, which still
           exists on the 'Photos' page.
-        </p>
-      </div>
-      <div class="mb-7">
-        <div class="flex justify-between mb-1">
-          <h2 class="text-xl">Nathanjms Tools</h2>
-          <LinkAndBtn
-            :items="[
-              { href: 'https://tools.nathanjms.co.uk', name: 'Website' },
-              { href: 'https://github.com/Nathanjms/nathanjms-tools', name: 'GitHub' },
-            ]"
-          />
-        </div>
-        <p>
-          Used as a learning experience to try TypeScript with React, this website contains a few tools to assist in my
-          day-to-day development work.
         </p>
       </div>
     </div>

@@ -20,5 +20,5 @@ const newTabAttrs = computed(() => {
 </script>
 
 <template>
-  <a class="font-medium text-blue-700 underline hover:text-blue-900" :href="href" v-bind="newTabAttrs"><slot /></a>
+  <a class="font-bold text-blue-800 underline hover:text-blue-900" :href="href" v-bind="newTabAttrs"><slot /></a>
 </template>
